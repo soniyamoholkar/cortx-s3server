@@ -472,6 +472,7 @@ class S3ObjectExtendedMetadata : private S3ObjectMetadataCopyable {
   std::shared_ptr<S3MotrKVSReader> motr_kv_reader;
   std::shared_ptr<S3MotrKVSWriter> motr_kv_writer;
   unsigned int fragments;
+  unsigned int fragments_read;
   unsigned int parts;
   std::vector<std::string> extended_keys;
   S3ObjectMetadataState state;
